@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.String?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" stylesheets="@../Styles/Style.css" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.movieproject.Controllers.LoginController">
+   <VBox alignment="CENTER" prefHeight="538.0" prefWidth="188.0" stylesheets="@../Styles/Style.css">
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../Images/Logo.png" />
+      </ImageView>
+      <styleClass>
+         <String fx:value="error_lbl" />
+         <String fx:value="login_logo_container" />
+      </styleClass>
+   </VBox>
+   <VBox alignment="TOP_CENTER" layoutX="233.0" layoutY="9.0" prefHeight="452.0" prefWidth="334.0" styleClass="login_form_container" stylesheets="@../Styles/Style.css" AnchorPane.bottomAnchor="16.0" AnchorPane.topAnchor="15.0">
+      <ImageView fx:id="personne_img" fitHeight="139.0" fitWidth="146.0" pickOnBounds="true" preserveRatio="true" style="-fx-blend-mode: gray;" styleClass="login_container" translateX="100.0">
+         <effect>
+            <Glow level="1.0" />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="NONE" />
+         </cursor>
+         <Image url="@../Images/login.png" />
+      </ImageView>
+      <Label fx:id="login_fld" alignment="CENTER" contentDisplay="CENTER" styleClass="login_label" stylesheets="@../Styles/Style.css" text="Login" textFill="#9c2e2e" translateX="140.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label text="Email" />
+      <TextField fx:id="address_fld" text="enter your address">
+         <font>
+            <Font name="Microsoft JhengHei" size="12.0" />
+         </font>
+         <styleClass>
+            <String fx:value="login_form_container" />
+            <String fx:value="input_field" />
+         </styleClass>
+      </TextField>
+      <Label text="password" />
+      <PasswordField fx:id="password_fld">
+         <styleClass>
+            <String fx:value="login_form_container" />
+            <String fx:value="input_field" />
+         </styleClass></PasswordField>
+      <Label fx:id="account_lbl" styleClass="login_form_container" stylesheets="@../Styles/Style.css" text="you don't have an account ?" />
+      <Button fx:id="login_btn" alignment="CENTER" mnemonicParsing="false" nodeOrientation="LEFT_TO_RIGHT" text="Sign in" />
+      <Button fx:id="signup_btn" alignment="CENTER" text="Sign Up" />
+      <Label fx:id="Error_lbl" text="Error">
+         <styleClass>
+            <String fx:value="error_lbl" />
+            <String fx:value="error_lbl" />
+         </styleClass></Label>
+   </VBox>
+</AnchorPane>
