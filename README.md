@@ -23,8 +23,6 @@ The application provides a simple and user-friendly interface for managing movie
 
 ---
 
----
-
 ## 🏗 Technologies Used
 
 - **Java 11+**
@@ -45,12 +43,12 @@ The application provides a simple and user-friendly interface for managing movie
 
 ## 📷 More Screenshots
 
-![Capture d'écran 2025-06-13 110418](https://github.com/user-attachments/assets/2416e937-162d-4e9c-9a19-6bc8001d1839)
+![Capture d'écran 2025-06-13 110512](https://github.com/user-attachments/assets/e97b096b-8b78-4172-b7fa-e96b5c71fa46)
+![Capture d'écran 2025-06-13 110542](https://github.com/user-attachments/assets/c2bd0633-29c2-4e30-ae1a-e30f6f005daa)
 
 
 ---
-
-## 🔑 Author
-
-Your name – _Java Developer passionate about desktop app development._
-
+## 👥 Contributors
+- **Rahma Bochnak**
+- **Siwar Chiha**
+---
